@@ -1,0 +1,26 @@
+body {
+	background-color: #222;
+	color: white;
+	text-align: center;
+}
+
+.recording {
+   width: 3em;
+   height: 3em;
+   position: absolute;
+   left: .5em;
+   top: .5em;
+   border-radius: 50%;
+   background-color: red;
+}
+
+.container {
+	font-size: 2em;
+	margin-top: 2em;
+}
+
+.command {
+	font-size: 2em;
+	width: 15em;
+	margin-top: .5em;
+}
