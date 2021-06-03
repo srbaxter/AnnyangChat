@@ -116,7 +116,7 @@ var calculateTip = function(number, total) {
   }
   var tip = newtotal * (number/100);
   var pay = newtotal + tip;
-  respond("Your new total is $" + pay); 
+  respond("Your new total is $" + pay);
 }
 
 // Says what today's date and weekday is plus current time
@@ -129,7 +129,7 @@ var calculateNow = function() {
     twelvehours = " PM";
   }
   var now = weekdays[today.getDay()] + ", " + months[today.getMonth()] + " " + today.getDate() + ", " + today.getFullYear() + ". The time is now " + hours + ":" + today.getMinutes() + twelvehours + "."
-  respond("Today is " + now); 
+  respond("Today is " + now);
 }
 
 // A word is matched
@@ -164,19 +164,18 @@ window.onload = function() {
         respond("What What, Turkey Butt");
       },
       'help': help,
-      ":term": matched    
-      };
+      ":term": matched
+    };
 
-      // Add our commands to annyang
-      annyang.addCommands(commands);
+    // Add our commands to annyang
+    annyang.addCommands(commands);
 
-      // Start listening.
-      annyang.start();
-      annyang.addCallback('resultNoMatch', noMatch);
-    
-      setTimeout(function() {
-        respond("Hi! Let's Chat! To see a list of commands, type or say \"Help.\"");
-      }, 500);  
-    }
+    // Start listening.
+    annyang.start();
+    annyang.addCallback('resultNoMatch', noMatch);
+
+    setTimeout(function() {
+      respond("Hi! Let's Chat! To see a list of commands, type or say \"Help.\"");
+    }, 500);
   }
 }
